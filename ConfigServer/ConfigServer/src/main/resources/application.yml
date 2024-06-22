@@ -1,0 +1,14 @@
+server:
+  port: 8085
+spring:
+  application:
+    name: CONFIG-SERVER
+#  profiles:
+#    active: native
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/Sameerk555/microservicesConfig
+          clone-on-start: true
+#          search-paths: '{application}'
